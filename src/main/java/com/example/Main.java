@@ -83,7 +83,7 @@ public class Main {
   }
 
   @GetMapping(value="/goodMorning")
-  public static void goodMorning() {
+  public String goodMorning() {
     return "Good Morning";
   }
   
