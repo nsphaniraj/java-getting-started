@@ -42,7 +42,7 @@ import static javax.measure.unit.SI.KILOGRAM;
 
 @Controller
 @SpringBootApplication
-//@RestController
+@RestController
 public class Main {
 
   @Value("${spring.datasource.url}")
@@ -81,6 +81,11 @@ public class Main {
     }
   }
 
+  @GetMapping(value="/goodMorning")
+  public static void goodMorning() {
+    return "Good Morning" 
+  }
+  
   @RequestMapping("/hello")
   String hello(Map<String, Object> model) {
     RelativisticModel.select();
