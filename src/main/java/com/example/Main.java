@@ -83,7 +83,7 @@ public class Main {
 
   @GetMapping(value="/goodMorning")
   public static void goodMorning() {
-    return "Good Morning" 
+    return "Good Morning";
   }
   
   @RequestMapping("/hello")
